@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables Homework</title>
+  </head>
+  <body style="background-color: blanchedalmond;">
+    <h1>Tables Homework</h1>
+
+    <p>The initial solution was not ideal, the consistency of the <b>TD</b> did not reliably keep the intended 50*50 size <br>
+      because row level width/height do not strictly control each cell's final dimensions.</p>
+
+      <hr>
+
+      <h2>Update:</h2>
+      <p>The issue was causing different length of text in different cells that were adjusting accordingly. <br>
+      Once the correct values are entered as in the exercise the cells are adjusted accordingly.</p>
+
+      <p>Defining the cell size on a <b>tr</b> level</p>
+
+    <!-- important: if there are only two rows the rowspan=2 will not be displayed accordingly -->
+    <table border="10" cellpadding="10" cellspacing="5">
+      <!-- row 1 A-->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: red">&nbsp;</td>
+        <td style="background-color: red"></td>
+        <td colspan="2" rowspan="2"></td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+<td style="background-color: lightskyblue; text-align:center; vertical-align:middle;">
+  <!-- CSS Flexbox Components -->
+  <span style="
+    display:inline-flex;
+    align-items:center; 
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+  </span>
+</td>
+        <td colspan="2" rowspan="2"></td>
+        <td style="background-color: blue"></td>
+        <td style="background-color: blue"></td>
+      </tr>
+
+      <!-- row 2 B-->
+      <!-- at least &nbsp; is needed or the height will reduce -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: red">&nbsp;</td>
+        <td style="background-color: red"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: blue"></td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: blue"></td>
+        <td style="background-color: blue"></td>
+      </tr>
+
+      <!-- row 3 C -->
+      <tr style="width: 50px; height: 50px;">
+        <td colspan="4" rowspan="2"></td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: blue"></td></td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td colspan="4" rowspan="2"></td>
+      </tr>
+
+      <!-- row 4 D -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: blue"></td></td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+      </tr>
+
+      <!-- row 5 E -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: lightskyblue">
+         <!--Css flexbox  -->
+         <span style="
+    display:inline-flex;
+    align-items:center; 
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+        </td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+      </tr>
+
+      <!-- row 6 F -->
+      <tr style="width: 50px; height: 50px;">
+        <td td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+        <td style="background-color: red"></td>
+        <td style="background-color: red"></td>
+        <td style="background-color: red"></td>
+        <td style="background-color: red"></td>
+        <td></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+        <td td style="background-color: lightskyblue">
+          <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+        </td>
+      </tr>
+
+      <!-- row 7 G -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue">
+          <!-- Css flexbox -->
+             <span style="
+    display:inline-flex;
+    align-items:center; 
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+        </td>
+      </tr>
+
+      <!-- row 8 H -->
+      <tr style="width: 50px; height: 50px;">
+        <td colspan="4" rowspan="2"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td colspan="4" rowspan="2"></td>
+      </tr>
+
+      <!-- row 9 I -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+      </tr>
+
+      <!-- row 10 J -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+        <td colspan="2" rowspan="2"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td colspan="2" rowspan="2"></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+      </tr>
+
+      <!-- row 11 K -->
+      <tr style="width: 50px; height: 50px;">
+        <td style="background-color: yellow;"></td>
+        <td style="background-color: yellow;"></td>
+       <td style="background-color: lightskyblue">
+                  <!-- Css flexbox -->
+             <span style="
+    display:inline-flex;
+    align-items:center; 
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+       </td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: lightskyblue"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+        <td style="background-color: rgb(47, 255, 47);"></td>
+      </tr>
+    </table>
+
+    <hr />
+
+
+    <h1>Ai refined</h1>
+    <p>the solution of not using css requires that all of the td entities to have separate td style for width and height defined in order to keep consistency <br>
+    Defining the cell size on a <b>td</b> level</p>
+    <center>
+    <table border="10" cellpadding="0" cellspacing="5">
+  <!-- row 1 A-->
+  <tr>
+    <td style="width:50px; height:50px; background-color:red;">&nbsp;</td>
+    <td style="width:50px; height:50px; background-color:red;"></td>
+
+    <!-- spans 2 cols x 2 rows = 100x100 -->
+    <td colspan="2" rowspan="2"></td>
+
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+
+    <td style="width:50px; height:50px; background-color:lightskyblue; text-align:center; vertical-align:middle;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      ">
+        START
+      </span>
+    </td>
+
+    <!-- spans 2 cols x 2 rows = 100x100 -->
+    <td colspan="2" rowspan="2"></td>
+
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+  </tr>
+
+  <!-- row 2 B -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:red;">&nbsp;</td>
+    <td style="width:50px; height:50px; background-color:red;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+  </tr>
+
+  <!-- row 3 C -->
+  <tr>
+    <!-- spans 4 cols x 2 rows = 200x100 -->
+    <td colspan="4" rowspan="2"></td>
+
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+
+    <!-- spans 4 cols x 2 rows = 200x100 -->
+    <td colspan="4" rowspan="2"></td>
+  </tr>
+
+  <!-- row 4 D -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:blue;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+  </tr>
+
+  <!-- row 5 E -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+                <!-- Css flexbox -->
+             <span style="
+    display:inline-flex;
+    align-items:center; 
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+  </tr>
+
+  <!-- row 6 F -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+    <td style="width:50px; height:50px; background-color:red;"></td>
+    <td style="width:50px; height:50px; background-color:red;"></td>
+    <td style="width:50px; height:50px; background-color:red;"></td>
+    <td style="width:50px; height:50px; background-color:red;"></td>
+    <td style="width:50px; height:50px;"></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+  </tr>
+
+  <!-- row 7 G -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+                   <span style="
+    display:inline-flex;
+    align-items:center; 
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+    </td>
+  </tr>
+
+  <!-- row 8 H -->
+  <tr>
+    <!-- spans 4 cols x 2 rows -->
+    <td colspan="4" rowspan="2"></td>
+
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+
+    <!-- spans 4 cols x 2 rows -->
+    <td colspan="4" rowspan="2"></td>
+  </tr>
+
+  <!-- row 9 I -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+  </tr>
+
+  <!-- row 10 J -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+
+    <!-- spans 2 cols x 2 rows -->
+    <td colspan="2" rowspan="2"></td>
+
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+      <span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span>
+    </td>
+
+    <!-- spans 2 cols x 2 rows -->
+    <td colspan="2" rowspan="2"></td>
+
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+  </tr>
+
+  <!-- row 11 K -->
+  <tr>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:yellow;"></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;">
+                   <span style="
+    display:inline-flex;
+    align-items:center; 
+    justify-content:center;
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:transparent;
+    border:4px solid black;
+    font-size:10px;
+  ">
+    START
+    </td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:lightskyblue;"><span style="
+        display:inline-flex;
+        align-items:center;
+        justify-content:center;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        background-color:transparent;
+        border:4px solid black;
+        font-size:10px;
+      "></span></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+    <td style="width:50px; height:50px; background-color:rgb(47,255,47);"></td>
+  </tr>
+</table>
+</center>
+
+<hr>
+<h2>Notes:</h2>
+<p>The cellpadding and cellspacing contribute to automatic adjustment of the cells</p>
+  </body>
+</html>
