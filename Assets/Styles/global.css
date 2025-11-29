@@ -1,5 +1,28 @@
+/* color palette info */
+
+/* burlywood: #DEB887 * - main color used for backgrounds/
+/* Complementary Color: #87adde
+   Analogous Colors: #de8d87 , #d9de87
+   Split Complementary Color: #8d87de , #87d9de
+   Triadic Color: #b887de , #87deb8
+   Tetradic Color: #de87ad , #87deb8 , #87adde
+
+   copied from: https://www.colorhexa.com/deb887
+*/
+
 /* global styles (all pages) */
-body {
+* {
   font-family: sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+body {
   background-color: burlywood;
+}
+
+h1 {
+  text-align: center;
 }

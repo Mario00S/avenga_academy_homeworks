@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../Assets/Styles/global.css">
+    <title>Homework_4</title>
+  </head>
+  <body>
+    <h1>Dado Tea Lunch Special</h1>
+
+    <p>
+      Monday trough Friday <br />
+      11am - 3pm <br />
+      $9.95 plus tax
+    </p>
+
+    <!-- could be done with using 2*br but not a good practice in html 
+     separate block is more common-->
+    <p>Includes sandwich, snack and drink.</p>
+
+    <!-- not sure how to approach 4 diferent fieldsets inside one form ? -->
+    <form>
+      <!-- Fieldset 1 Order Information -->
+      <fieldset>
+        <legend>Order Information</legend>
+        <label for="name"><b>Name</b></label>
+        <br />
+        <input type="text" name="name" id="name" />
+        <br />
+        <label for="here">Here</label>
+        <input type="radio" name="here" id="here" />
+        <br />
+        <label for="to_go">To Go</label>
+        <input type="radio" name="to_go" id="to_go" />
+      </fieldset>
+      <br />
+      <!-- fieldset 2 Sandwiches -->
+
+      <fieldset>
+        <legend>Sandwiches</legend>
+        <!-- alternative way to use label inside a paragraph -->
+
+        <!-- Monday -->
+        <!-- the name atribute is used for the radio button, multiple elements should share the same name in order only one to be selected -->
+        <p>
+          <b>Monday</b>
+          <br />
+          <input type="radio" name="monday" id="mozzarella" />
+          <label for="mozzarella">Tomato Mozzarella</label>
+          <br />
+          <input type="radio" name="monday" id="chiken_salad" />
+          <label for="chiken_salad">Chiken Salad</label>
+        </p>
+
+        <!-- Tuesday -->
+        <p>
+          <b>Tuesday</b>
+          <br />
+          <input type="radio" name="tuesday" id="greek_salad" />
+          <label for="greek_salad">Greek Salad Wrap</label>
+          <br />
+          <input type="radio" name="tuesday" id="toto_wrap" />
+          <label for="toto_wrap">Toto Wrap</label>
+        </p>
+
+        <!-- Wednesday -->
+        <p>
+          <b>Wednesday</b>
+          <br />
+          <input type="radio" name="wednesday" id="red_pepper_hummus" />
+          <label for="red_pepper_hummus">Red Pepper Hummus</label>
+          <br />
+          <input type="radio" name="wednesday" id="roasted_turkey" />
+          <label for="roasted_turkey">Roasted Turkey</label>
+        </p>
+
+        <!-- Thursday -->
+        <p>
+          <b>Thursday</b>
+          <br />
+          <input type="radio" name="thursday" id="carrot_ginger_hummus_wrap" />
+          <label for="carrot_ginger_hummus_wrap"
+            >Carrot Ginger Hummus Wrap</label
+          >
+          <br />
+          <input type="radio" name="thursday" id="egg_salad" />
+          <label for="egg_salad">Egg Salad</label>
+        </p>
+
+        <!-- Friday -->
+        <p>
+          <b>Friday</b>
+          <br />
+          <input type="radio" name="friday" id="dado_wrap" />
+          <label for="dado_wrap">Dado Wrap</label>
+          <br />
+          <input type="radio" name="friday" id="tuna_salad" />
+          <label for="tuna_salad">Tuna Salad</label>
+        </p>
+        <hr />
+        <input
+          type="checkbox"
+          name="gluten_free_bread"
+          id="gluten_free_bread"
+        />
+        <label for="gluten_free_bread">Gluten Free Bread</label>
+      </fieldset>
+
+      <!-- Snacks Fieldset -->
+      <fieldset>
+        <legend>Snack</legend>
+
+        <p>
+          <b>Snacks</b>
+          <br />
+          <input type="radio" name="snack" id="apple" />
+          <label for="apple">Apple</label>
+          <br />
+          <input type="radio" name="snack" id="banana" />
+          <label for="banana">Banana</label>
+          <br />
+          <input type="radio" name="snack" id="potato_chips" />
+          <label for="potato_chips">Potato Chips</label>
+        </p>
+      </fieldset>
+
+      <!-- Drink Fieldset -->
+      <fieldset>
+        <legend>Drink</legend>
+        <p>
+          <label for="drinks"><b>Drinks</b></label>
+          <select name="drinks" id="drnks">
+            <option value="coffee">Cofee</option>
+            <option value="ice_coffee">Ice Cofee</option>
+            <option value="hot_sencha_green_tea">Hot Sencha Green Tea</option>
+            <option value="iced_sencha_green_tea">Iced Sencha Green Tea</option>
+            <option value="hot_keemun_green_tea">Hot Keemun Green Tea</option>
+            <option value="iced_keemun_green_tea">Iced Keemun Green Tea</option>
+          </select>
+          <hr>
+          <input type="checkbox" name="large_drink" id="large_drink">
+          <label for="large_drink">Large Drink (75c extra)</label>
+        </p>
+      </fieldset>
+
+      <!-- Submit button -->
+      
+       <input type="submit" value="Place Order">
+    </form>
+  </body>
+</html>
