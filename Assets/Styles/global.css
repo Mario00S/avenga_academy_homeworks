@@ -1,13 +1,14 @@
 /* color palette info */
 
-/* burlywood: #DEB887 * - main color used for backgrounds/
-/* Complementary Color: #87adde
-   Analogous Colors: #de8d87 , #d9de87
-   Split Complementary Color: #8d87de , #87d9de
-   Triadic Color: #b887de , #87deb8
-   Tetradic Color: #de87ad , #87deb8 , #87adde
-
-   copied from: https://www.colorhexa.com/deb887
+/* 
+| Role            | Color Name   | Hex Code | Visual Description | Usage                                                                                              |
+| --------------- | ------------ | -------- | ------------------ | -------------------------------------------------------------------------------------------------- |
+| Background      | Burlywood    | #DEB887  | Warm Sand          | Main background for sections, hero areas, or cards.                                                |
+| Surface         | Cream / Bone | #FAF3E0  | Off-White          | Content containers or "paper" areas to sit on top of the Burlywood background for readability.     |
+| Primary Text    | Espresso     | #4A3728  | Dark Brown         | Main body text. Softer on the eyes than pure black against the warm background.                    |
+| Accent / Action | Rust         | #A04000  | Deep Orange        | Buttons, important links, icons, or calls to action (CTA).                                         |
+| Secondary       | Sage         | #6E8B3D  | Muted Green        | Success messages, secondary buttons, or decorative elements (like borders/lines).                  |
+| Highlight       | Deep Blue    | #214778  | Muted Navy         | Footer background or headers; provides high contrast and is the complementary color to Burlywood . |
 */
 
 /* global styles (all pages) */
@@ -15,9 +16,23 @@
   font-family: sans-serif;
 }
 
+/* class selector */
+
 .text-center {
   text-align: center;
 }
+
+.block-color-accent {
+  background-color: #faf3e0;
+}
+
+.lorem-text {
+  text-align: justify;
+  text-shadow: #b300ff 1px 0px 0px;
+  font-weight: bolder;
+}
+
+/* type selector */
 
 body {
   background-color: burlywood;
@@ -25,4 +40,20 @@ body {
 
 h1 {
   text-align: center;
+}
+
+hr {
+  border: 2px solid #4a3728;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #a04000;
+}
+
+a:hover {
+  color: #b300ff;
 }
