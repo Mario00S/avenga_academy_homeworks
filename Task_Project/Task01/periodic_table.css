@@ -680,3 +680,34 @@
 .text-center {
   text-align: center;
 }
+
+/* --- HOVER RULES --- */
+
+/* When hovering the alkali metal description, highlight matching elements */
+.alkali-metal-description:hover ~ .periodic-table .alkali-metal {
+  background-color: #ff8888; /* Lighter shade */
+  box-shadow: 0 0 15px 5px #ffff00; /* Bright yellow glow */
+  filter: brightness(1.3);
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* When hovering the alkali metal description, highlight matching elements */
+.alkaline-earth-metal-description:hover
+  ~ .periodic-table
+  .alkaline-earth-metal {
+  background-color: #ff8888; /* Lighter shade */
+  box-shadow: 0 0 15px 5px #ffff00; /* Bright yellow glow */
+  filter: brightness(1.3);
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+/* When hovering the alkali metal description, highlight matching elements */
+.transition-metal-description:hover ~ .periodic-table .transition-metal {
+  background-color: #ff8888; /* Lighter shade */
+  box-shadow: 0 0 15px 5px #ffff00; /* Bright yellow glow */
+  filter: brightness(1.3);
+  transform: scale(1.1);
+  z-index: 10;
+}
